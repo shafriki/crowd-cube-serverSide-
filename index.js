@@ -10,7 +10,8 @@ const port = process.env.PORT || 5000;
 const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
-      "http://localhost:5173",  
+      "http://localhost:5173", 
+      "http://localhost:5174", 
       "https://shafriki-crowdcube.surge.sh"  
     ];
     if (allowedOrigins.indexOf(origin) !== -1) {
